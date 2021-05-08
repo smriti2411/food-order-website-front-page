@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    height: 100px;
+    width: 100%;
+    background-color: wheat;
+}
+.navbar .menu img{
+    width: 50px;
+    height: 50px;
+    padding: 20px 200px;
+    
+}
+.navbar .menu ul{
+    float: right;
+    padding: 30px 200px;
+}
+.navbar .menu ul li{
+    display: inline;
+    margin-right: 20px;
+    padding-left: 20px;
+    list-style: none;
+    color: black;
+    font-size: 15px;
+}
+.navbar .menu ul li:hover{
+    color: chocolate;
+}
+
+.middle .food{
+    width: 800px;
+    height: 400px;
+    background: url(Image/food.jpg);
+    float: right;
+    margin: 50px;
+  
+    animation: slide 20s infinite;
+}
+@keyframes slide{
+    25%{
+        background: url(Image/food1.jpg);
+    }
+    50%{
+        background: url(Image/food3.jpg);
+    }
+    75%{
+        background: url(Image/food4.jpg);
+    }
+    100%{
+        background: url(Image/food.jpg);
+    }
+}
+.info{
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    left: 90px;
+    position: absolute;
+    color: black;
+}
+.text{
+    width: 50%;
+    float: left;
+}
+.text h1{
+    font-size: 43px;
+    width: 640px;
+    position: relative;
+    margin-left: 40px;
+}
+.banner-btn{
+	padding-left: 100px;
+    margin-top: 20px;
+}
+.banner-btn a{
+	width: 150px;
+
+	text-decoration: none;
+	display: inline-block;
+	margin: 10px 10px;
+	padding: 12px 20px;
+	color: black;
+	border: .5px solid wheat;
+	position: relative;
+	z-index: 1;
+	transition: color 0.5s;
+}
+.banner-btn a span{
+	width: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: wheat;
+	z-index: -1;
+	transition: 0.5s;
+}
+.banner-btn a:hover span{
+	width: 100%;
+}
+.banner-btn a:hover{
+	color: chocolate;
+}
+.row{
+    padding-top: 35%;
+}
+.footer{
+
+    min-height: 25%;
+    background-image: linear-gradient(to right,wheat,#e9c794);
+    padding: 25px 50px;
+    display: inline-flex;
+    color: black;
+}
+.footer-text{
+    padding-left: 25px;
+}
+.footer .fa{
+    font-size: 25px;
+}
+.row{
+    margin: 0 !important;
+}
+.social{
+    margin: -1px 75px;
+}
+.social .fa{
+    padding: 5px;
+}
+@media only screen and (max-width:960px)
+{
+    .footer{
+        background-image: linear-gradient(wheat,#e9c794);
+    }
+}
